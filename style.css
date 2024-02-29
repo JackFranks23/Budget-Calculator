@@ -1,0 +1,17 @@
+*{box-sizing: border-box;}
+
+p,h1,img{
+    color: white;
+}
+.column{
+    display: flex;
+    flex-flow: column;
+}
+main,.row{
+    display: flex;
+    flex-flow: row;
+}
+
+.card{
+    background-color: #2A2A2A;
+}
