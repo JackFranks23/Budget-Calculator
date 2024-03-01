@@ -8,6 +8,7 @@ p,h1,img{
     flex-flow: column;
     margin: 5%;
     width: 50%;
+    align-items: center;
 }
 main,.row{
     display: flex;
@@ -15,17 +16,27 @@ main,.row{
 
 }
 
+.card>h1 {
+    display: flex;
+    align-self: center;
+}
+
 .card{
+    display: flex;
+    flex-direction: column;
     background-color: #2A2A2A;
     width: 48%;
     margin: 1%;
     justify-content: center;
+    border-radius: 0.3rem;
 }
 .column > p {
     border-style: solid;
     border-color:#65844F;
     background-color: #65844F;
     margin: 5%;
+    border-radius: .3rem;
+    padding: 0.6rem;
 
 }
 .taxes {
@@ -41,4 +52,32 @@ p {
     padding: 5px;
     padding-top: 1%;
     padding-bottom: 3%;
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #65844F;
+    font-weight: bold;
+}
+
+/* .column>.row>.taxes {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.column>.row>.number {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
+
+.number {
+    color: #FFFFFF;
+    display: flex;
+    flex-flow: column;
+    margin: 5%;
+    /* width: 48%; */
 }
