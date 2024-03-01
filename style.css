@@ -6,12 +6,39 @@ p,h1,img{
 .column{
     display: flex;
     flex-flow: column;
+    margin: 5%;
+    width: 50%;
 }
 main,.row{
     display: flex;
     flex-flow: row;
+
 }
 
 .card{
     background-color: #2A2A2A;
+    width: 48%;
+    margin: 1%;
+    justify-content: center;
+}
+.column > p {
+    border-style: solid;
+    border-color:#65844F;
+    background-color: #65844F;
+    margin: 5%;
+
+}
+.taxes {
+    color: #FFFFFF;
+    display: flex;
+    flex-flow: column;
+    margin: 5%;
+    /* width: 48%; */
+}
+p {
+    width: 80%;
+    font-size: 18px;
+    padding: 5px;
+    padding-top: 1%;
+    padding-bottom: 3%;
 }
