@@ -8,7 +8,7 @@ p,h1,img{
     flex-flow: column;
     margin: 5%;
     width: 50%;
-    align-items: center;
+    align-items: ;
 }
 main,.row{
     display: flex;
@@ -79,5 +79,21 @@ header{
     display: flex;
     flex-flow: column;
     margin: 5%;
-    /* width: 48%; */
+    width: 48%;
+}
+
+.costbudgetcolumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.monthlyspending {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.column>input {
+    padding: 4%;
 }
