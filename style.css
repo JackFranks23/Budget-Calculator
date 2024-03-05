@@ -1,7 +1,7 @@
 *{box-sizing: border-box;}
 
 p,h1,img{
-    color: white;
+    color: #EAECE9;
 }
 .column{
     display: flex;
@@ -40,7 +40,7 @@ p,h1,img{
 
 }
 .taxes {
-    color: #FFFFFF;
+    color: #EAECE9;
     display: flex;
     flex-flow: column;
     margin: 5%;
@@ -75,7 +75,7 @@ header{
 } */
 
 .number {
-    color: #FFFFFF;
+    color: #EAECE9;
     display: flex;
     flex-flow: column;
     margin: 5%;
@@ -85,7 +85,9 @@ header{
 .costbudgetcolumn {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
 }
 
 .monthlyspending {
@@ -112,7 +114,7 @@ header{
 }
 
 .next > a {
-    color: #FFFFFF;
+    color: #EAECE9;
     text-decoration: none;  
     justify-content: center;
     align-self: center;
@@ -134,4 +136,11 @@ header{
     margin-left: 1%;
     height: 10%;
     font-size: 36px;
+    color: #EAECE9;
+    text-decoration: none;
 }
+img {
+    max-width: 150px;
+    align-self: center;
+}
+
