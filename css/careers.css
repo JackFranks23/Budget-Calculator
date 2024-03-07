@@ -1,0 +1,17 @@
+section {
+margin: 5%;
+background-color: #2A2A2A;
+color: #EAECE9;
+}
+#root {
+    display: flex;
+    flex-flow: row wrap;
+}
+body {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+a {
+    
+}
