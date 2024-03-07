@@ -5,9 +5,9 @@ if (localStorage.getItem(incomeID) === null) {
 }
 
 let income = JSON.parse(localStorage.getItem(incomeID));
+let netMonthly = 0;
 
 document.addEventListener("DOMContentLoaded", function () {
-    let netMonthly = 0;
     addEventListener('change', function (eventData){
 
         let grossyear = document.getElementById("grossyear").value;
@@ -22,9 +22,9 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("insurance").innerText = (180);
         // document.getElementById("netmonthly").innerText = (grossmonthlygrossmonthly-(Math.round(grossmonthly*100*.12)/100)-(Math.round(grossmonthly*100*.07)/100)-(Math.round(grossmonthly*100*.062)/100)-(Math.round(grossmonthly*100*.0145)/100)-(Math.round(grossmonthly*100*.05)/100)-180); //use the round here
 
-        document.getElementById("netmonthly").innerText = ((Math.round(grossmonthly*100*.3165)/100 + 180));
-        netMonthly = ((Math.round(grossmonthly*100*.3165)/100 + 180));
-
+        netMonthly = ((Math.round(grossmonthly*100*.3165)/100 - 180));
+        document.getElementById("netmonthly").innerText = netMonthly;
+        document.getElementById("netmonthly2").innerText = netMonthly;
     });
 
 });
