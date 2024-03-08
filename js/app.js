@@ -1,11 +1,4 @@
-const incomeID = `income`;
 
-if (localStorage.getItem(incomeID) === null) {
-    localStorage.setItem(incomeID, JSON.stringify({ total: 0 }));
-}
-
-let income = JSON.parse(localStorage.getItem(incomeID));
-let netMonthly = 0;
 
 document.addEventListener("DOMContentLoaded", function () {
     addEventListener('change', function (eventData){
@@ -23,8 +16,17 @@ document.addEventListener("DOMContentLoaded", function () {
         // document.getElementById("netmonthly").innerText = (grossmonthlygrossmonthly-(Math.round(grossmonthly*100*.12)/100)-(Math.round(grossmonthly*100*.07)/100)-(Math.round(grossmonthly*100*.062)/100)-(Math.round(grossmonthly*100*.0145)/100)-(Math.round(grossmonthly*100*.05)/100)-180); //use the round here
 
         netMonthly = ((Math.round(grossmonthly*100*.3165)/100 - 180));
+        console.log(netMonthly)
         document.getElementById("netmonthly").innerText = netMonthly;
         document.getElementById("netmonthly2").innerText = netMonthly;
     });
 
 });
+
+function page2() {
+    document.open
+    document.write (
+
+    )
+    document.close
+}

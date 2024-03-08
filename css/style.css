@@ -58,21 +58,10 @@ p {
 header{
     display: flex;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #65844F;
-    font-weight: bold;
+    font-weight: bolder;
 }
-
-/* .column>.row>.taxes {
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.column>.row>.number {
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-} */
 
 .number {
     color: #EAECE9;
@@ -110,7 +99,8 @@ header{
     border-color:#65844F;
     border-radius: .5rem;
     padding: 0.6rem;
-    padding-left: 7.5%;
+    text-align: center;
+    padding-bottom: 50px;
 }
 
 .next > a {
