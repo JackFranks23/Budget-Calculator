@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let grossyear = document.getElementById("grossyear").value;
         let grossmonthly =grossyear/12;  
         //round to the cent Math.floor(x*100)/100
+        
         document.getElementById("grossmonthly").innerText = (Math.round(grossmonthly*100)/100);
         document.getElementById("fedtaxes").innerText = ((Math.round(grossmonthly*100*.12)/100));
         document.getElementById("statetaxes").innerText = ((Math.round(grossmonthly*100*.07)/100));
@@ -23,10 +24,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-function page2() {
-    document.open
-    document.write (
+function changepage() {
+    let index = document.getElementById("index");
+    index.classList.add("hidden");
+    let budget = document.getElementById("budget");
+    budget.classList.remove("hidden")
+}
 
-    )
-    document.close
+function goback() {
+    let budget = document.getElementById("budget");
+    budget.classList.add("hidden");
+    let index = document.getElementById("index");
+    index.classList.remove("hidden")
 }

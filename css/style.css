@@ -1,5 +1,6 @@
-*{box-sizing: border-box;}
-
+*{box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 p,h1,img{
     color: #EAECE9;
 }
@@ -102,14 +103,19 @@ header{
     text-align: center;
     padding-bottom: 50px;
 }
-
-.next > a {
+.next > a,
+.next > button {
     color: #EAECE9;
     text-decoration: none;  
     justify-content: center;
     align-self: center;
     font-size: 36px;
+background-color: #65844F;
+border: none;
+}
 
+button:hover {
+    cursor: pointer;
 }
 
 .back {
@@ -134,3 +140,19 @@ img {
     align-self: center;
 }
 
+.hidden {
+    display: none;
+}
+
+.stupid {
+    color: #2A2A2A;
+    text-decoration: none;
+}
+
+.stupid:hover {
+    cursor: default;
+}
+
+input {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
